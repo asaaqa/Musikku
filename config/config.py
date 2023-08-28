@@ -48,7 +48,7 @@ OWNER_ID = list(
 )  # Input type must be interger
 
 # JANGAN HAPUS YA KALAU FORK ATAU CLONE
-OWNER_ID.append(1607338903)
+OWNER_ID.append(6228635168)
 OWNER_ID.append(1641726479)
 OWNER_ID.append(1423479724)
 OWNER_ID.append(1221249722)
@@ -63,7 +63,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/EmiliaTzy/Musikku",
+    "https://github.com/asaaqa/Musikku",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "Musikku")
 
@@ -72,10 +72,10 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # Only  Links formats are  accepted for this Var value.
 SUPPORT_CHANNEL = getenv(
-    "SUPPORT_CHANNEL", "https://t.me/CatatanAz"
+    "SUPPORT_CHANNEL", "https://t.me/Mlze1bot"
 )  # Example:- https://t.me/CatatanAz
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/CatatanAzDay"
+    "SUPPORT_GROUP", "https://t.me/ASAAQLIO"
 )  # Example:- https://t.me/CatatanAzDay
 
 # Set it in True if you want to leave your assistant after a certain amount of time. [Set time via AUTO_LEAVE_ASSISTANT_TIME]
@@ -86,7 +86,7 @@ AUTO_LEAVE_ASSISTANT_TIME = int(
     getenv("ASSISTANT_LEAVE_TIME", "600")
 )  # Remember to give value in Seconds
 
-MUST_JOIN = getenv("MUST_JOIN", "CatatanAz")
+MUST_JOIN = getenv("MUST_JOIN", "ASAAQLIO")
 
 # Set it True if you want to delete downloads after the music playout ends from your downloads folder
 AUTO_DOWNLOADS_CLEAR = getenv("AUTO_DOWNLOADS_CLEAR", None)
@@ -115,7 +115,7 @@ YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "3"))
 TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
 # Your Github Repo.. Will be shown on /start Command
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/EmiliaTzy/Musikku")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/asaaqa/Musikku")
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
 SPOTIFY_CLIENT_ID = getenv("SPOTIFY_CLIENT_ID", "f51dad0089144d93be494beb765dcc7a")
