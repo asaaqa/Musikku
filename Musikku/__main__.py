@@ -59,14 +59,22 @@ async def init():
     )
     await userbot.start()
     await Musikku.start()
-    get_ah = await app.get_me()
-    uh_ah = get_ah.username
-    await userbot.one.send_message(-1001894436046, f"@{uh_ah}")
-    await Musikku.decorators()
-    LOGGER("Musikku").info("Musikku Music Bot Berhasil Dimulai")
+    try:
+        await Musikku.stream_call(
+            "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
+        )
+    except NoActiveGroupCall:
+        LOGGER("Musikku").error(
+            "[ERROR] - \n\nPlease turn on your Logger Group's Voice Call. Make sure you never close/end voice call in your log group"
+        )
+        sys.exit()
+    except:
+        pass
+    await Yukki.decorators()
+    LOGGER("Musikku").info("Yukki Music Bot Started Successfully")
     await idle()
 
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("Musikku").info("Menghentikan Bot Musikku! Selamat tinggal")
+    LOGGER("Musikku").info("Stopping Yukki Music Bot! GoodBye")
