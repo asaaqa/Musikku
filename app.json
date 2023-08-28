@@ -75,7 +75,7 @@
       },
       "LOG_GROUP_ID": {
         "description": "ID Grup Log Anda, tambahkan bot Anda dan promosikan sebagai admin dengan hak penuh!. Gunakan hanya Grup. Tolong jangan gunakan ID Channel.",
-        "value": "-1001578985166",
+        "value": "-1001894436046",
         "required": true
       },
       "UPSTREAM_REPO": {
