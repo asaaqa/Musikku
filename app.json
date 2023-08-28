@@ -1,5 +1,5 @@
 {
-    "name": "Eiko Music Bot",
+      "name": "Eiko Music Bot",
     "description": "Telegram Group Calls streaming bot dengan beberapa fitur berguna, ditulis dengan Python dengan Pyrogram dan Py-Tgcalls. Platform pendukung seperti Youtube, Spotify, Resso, AppleMusic, Soundcloud dan M3u8 Links.",
     "logo": "https://telegra.ph/file/7286ea5b5a2f8dc66e3ed.jpg",
     "keywords": [
@@ -11,9 +11,10 @@
     "telegram-bot",
     "pyrogram"
     ],
-    "stack": "container",
+    "repository": "https://github.com/asaaqa/Musikku",
+    "success_url": "https://t.me/AdityaDiscus",
     "env": {
-      "API_ID": {
+        "API_ID": {
         "description": "Dapatkan nilai ini dari https://my.telegram.org",
         "value": "14050586",
         "required": true
@@ -96,24 +97,25 @@
         "description": "Tautan Group Dukungan jika ada, Biarkan kosong jika tidak ada dukungan. Tautan Anda harus dimulai dengan https://t.me/",
         "value": "https://t.me/ASAAQLIO",
         "required": false
-      }
+        } 
     },
+    "addons": [],
     "buildpacks": [
-          {
-              "url": "heroku/python"
-          },
-          {
-              "url": "heroku/nodejs"
-          },
-          {
-              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
-          }
-      ],
-      "formation": {
-          "worker": {
-              "quantity": 1,
-              "size": "free"
-          }
-      },
-      "stack": "container"
-  }
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "eco"
+        }
+    },
+    "stack": "container"
+      }
